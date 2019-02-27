@@ -28,12 +28,12 @@ import (
 
 	"golang.org/x/time/rate"
 
+	"github.com/coreos/go-semver/semver"
 	"github.com/aergoio/etcd/etcdserver/stats"
 	"github.com/aergoio/etcd/pkg/testutil"
 	"github.com/aergoio/etcd/pkg/types"
 	"github.com/aergoio/etcd/raft/raftpb"
 	"github.com/aergoio/etcd/version"
-	"github.com/coreos/go-semver/semver"
 )
 
 // TestStreamWriterAttachOutgoingConn tests that outgoingConn can be attached
