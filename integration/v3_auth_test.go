@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/auth/authpb"
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/aergoio/etcd/auth/authpb"
+	"github.com/aergoio/etcd/clientv3"
+	"github.com/aergoio/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/aergoio/etcd/etcdserver/etcdserverpb"
+	"github.com/aergoio/etcd/pkg/testutil"
 )
 
 // TestV3AuthEmptyUserGet ensures that a get with an empty user will return an empty user error.

@@ -25,9 +25,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/coreos/etcd/functional/rpcpb"
-	"github.com/coreos/etcd/pkg/fileutil"
-	"github.com/coreos/etcd/pkg/proxy"
+	"github.com/aergoio/etcd/functional/rpcpb"
+	"github.com/aergoio/etcd/pkg/fileutil"
+	"github.com/aergoio/etcd/pkg/proxy"
 
 	"go.uber.org/zap"
 )

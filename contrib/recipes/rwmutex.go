@@ -17,9 +17,9 @@ package recipe
 import (
 	"context"
 
-	v3 "github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/concurrency"
-	"github.com/coreos/etcd/mvcc/mvccpb"
+	v3 "github.com/aergoio/etcd/clientv3"
+	"github.com/aergoio/etcd/clientv3/concurrency"
+	"github.com/aergoio/etcd/mvcc/mvccpb"
 )
 
 type RWMutex struct {

@@ -19,12 +19,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/etcdserver"
-	"github.com/coreos/etcd/etcdserver/api"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/etcdserver/membership"
-	"github.com/coreos/etcd/pkg/types"
+	"github.com/aergoio/etcd/clientv3"
+	"github.com/aergoio/etcd/etcdserver"
+	"github.com/aergoio/etcd/etcdserver/api"
+	pb "github.com/aergoio/etcd/etcdserver/etcdserverpb"
+	"github.com/aergoio/etcd/etcdserver/membership"
+	"github.com/aergoio/etcd/pkg/types"
 
 	"github.com/coreos/go-semver/semver"
 )

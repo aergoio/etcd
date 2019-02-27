@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3/mirror"
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/mvcc/mvccpb"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/aergoio/etcd/clientv3/mirror"
+	"github.com/aergoio/etcd/integration"
+	"github.com/aergoio/etcd/mvcc/mvccpb"
+	"github.com/aergoio/etcd/pkg/testutil"
 )
 
 func TestMirrorSync(t *testing.T) {

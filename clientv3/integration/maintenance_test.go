@@ -24,12 +24,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/lease"
-	"github.com/coreos/etcd/mvcc"
-	"github.com/coreos/etcd/mvcc/backend"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/aergoio/etcd/etcdserver/api/v3rpc/rpctypes"
+	"github.com/aergoio/etcd/integration"
+	"github.com/aergoio/etcd/lease"
+	"github.com/aergoio/etcd/mvcc"
+	"github.com/aergoio/etcd/mvcc/backend"
+	"github.com/aergoio/etcd/pkg/testutil"
 )
 
 func TestMaintenanceHashKV(t *testing.T) {

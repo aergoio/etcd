@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/mvcc/mvccpb"
+	"github.com/aergoio/etcd/clientv3"
+	"github.com/aergoio/etcd/mvcc/mvccpb"
 
 	bolt "github.com/coreos/bbolt"
 )

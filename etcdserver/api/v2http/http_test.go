@@ -22,12 +22,12 @@ import (
 	"sort"
 	"testing"
 
-	etcdErr "github.com/coreos/etcd/error"
-	"github.com/coreos/etcd/etcdserver"
-	"github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/etcdserver/membership"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/raft/raftpb"
+	etcdErr "github.com/aergoio/etcd/error"
+	"github.com/aergoio/etcd/etcdserver"
+	"github.com/aergoio/etcd/etcdserver/etcdserverpb"
+	"github.com/aergoio/etcd/etcdserver/membership"
+	"github.com/aergoio/etcd/pkg/types"
+	"github.com/aergoio/etcd/raft/raftpb"
 
 	"github.com/coreos/go-semver/semver"
 )

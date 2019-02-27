@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/aergoio/etcd/pkg/testutil"
 )
 
 func TestTxnPanics(t *testing.T) {

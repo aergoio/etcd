@@ -18,8 +18,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/coreos/etcd/clientv3"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
+	"github.com/aergoio/etcd/clientv3"
+	pb "github.com/aergoio/etcd/etcdserver/etcdserverpb"
 )
 
 type maintenanceProxy struct {

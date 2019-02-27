@@ -24,10 +24,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/coreos/etcd/lease"
-	"github.com/coreos/etcd/mvcc/backend"
-	"github.com/coreos/etcd/mvcc/mvccpb"
-	"github.com/coreos/etcd/pkg/schedule"
+	"github.com/aergoio/etcd/lease"
+	"github.com/aergoio/etcd/mvcc/backend"
+	"github.com/aergoio/etcd/mvcc/mvccpb"
+	"github.com/aergoio/etcd/pkg/schedule"
 	"github.com/coreos/pkg/capnslog"
 )
 
@@ -44,7 +44,7 @@ var (
 	ErrCanceled  = errors.New("mvcc: watcher is canceled")
 	ErrClosed    = errors.New("mvcc: closed")
 
-	plog = capnslog.NewPackageLogger("github.com/coreos/etcd", "mvcc")
+	plog = capnslog.NewPackageLogger("github.com/aergoio/etcd", "mvcc")
 )
 
 const (

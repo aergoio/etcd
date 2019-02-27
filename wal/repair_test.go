@@ -21,8 +21,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/coreos/etcd/raft/raftpb"
-	"github.com/coreos/etcd/wal/walpb"
+	"github.com/aergoio/etcd/raft/raftpb"
+	"github.com/aergoio/etcd/wal/walpb"
 )
 
 type corruptFunc func(string, int64) error

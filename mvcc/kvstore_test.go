@@ -26,11 +26,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/lease"
-	"github.com/coreos/etcd/mvcc/backend"
-	"github.com/coreos/etcd/mvcc/mvccpb"
-	"github.com/coreos/etcd/pkg/schedule"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/aergoio/etcd/lease"
+	"github.com/aergoio/etcd/mvcc/backend"
+	"github.com/aergoio/etcd/mvcc/mvccpb"
+	"github.com/aergoio/etcd/pkg/schedule"
+	"github.com/aergoio/etcd/pkg/testutil"
 )
 
 func TestStoreRev(t *testing.T) {

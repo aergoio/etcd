@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/coreos/etcd/pkg/fileutil"
-	"github.com/coreos/etcd/pkg/pbutil"
-	"github.com/coreos/etcd/raft"
-	"github.com/coreos/etcd/raft/raftpb"
-	"github.com/coreos/etcd/wal/walpb"
+	"github.com/aergoio/etcd/pkg/fileutil"
+	"github.com/aergoio/etcd/pkg/pbutil"
+	"github.com/aergoio/etcd/raft"
+	"github.com/aergoio/etcd/raft/raftpb"
+	"github.com/aergoio/etcd/wal/walpb"
 
 	"github.com/coreos/pkg/capnslog"
 )
@@ -53,7 +53,7 @@ var (
 	// so that tests can set a different segment size.
 	SegmentSizeBytes int64 = 64 * 1000 * 1000 // 64MB
 
-	plog = capnslog.NewPackageLogger("github.com/coreos/etcd", "wal")
+	plog = capnslog.NewPackageLogger("github.com/aergoio/etcd", "wal")
 
 	ErrMetadataConflict = errors.New("wal: conflicting metadata found")
 	ErrFileNotFound     = errors.New("wal: file not found")

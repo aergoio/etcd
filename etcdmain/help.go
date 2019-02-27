@@ -17,7 +17,7 @@ package etcdmain
 import (
 	"strconv"
 
-	"github.com/coreos/etcd/embed"
+	"github.com/aergoio/etcd/embed"
 )
 
 var (

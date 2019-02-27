@@ -21,11 +21,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/concurrency"
-	etcdErr "github.com/coreos/etcd/error"
-	"github.com/coreos/etcd/mvcc/mvccpb"
-	"github.com/coreos/etcd/store"
+	"github.com/aergoio/etcd/clientv3"
+	"github.com/aergoio/etcd/clientv3/concurrency"
+	etcdErr "github.com/aergoio/etcd/error"
+	"github.com/aergoio/etcd/mvcc/mvccpb"
+	"github.com/aergoio/etcd/store"
 )
 
 // store implements the Store interface for V2 using
