@@ -149,11 +149,11 @@ func (h *pipelineHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 type snapshotHandler struct {
 	tr          Transporter
 	r           Raft
-	snapshotter *snap.Snapshotter
+	snapshotter snap.SnapshotSaver
 	cid         types.ID
 }
 
-func newSnapshotHandler(tr Transporter, r Raft, snapshotter *snap.Snapshotter, cid types.ID) http.Handler {
+func newSnapshotHandler(tr Transporter, r Raft, snapshotter snap.SnapshotSaver, cid types.ID) http.Handler {
 	return &snapshotHandler{
 		tr:          tr,
 		r:           r,
@@ -229,7 +229,7 @@ func (h *snapshotHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		plog.Infof("receiving database snapshot [index:%d, from %s] ...", m.Snapshot.Metadata.Index, types.ID(m.From))
 	}
 	// save incoming database snapshot.
-	n, err := h.snapshotter.SaveDBFrom(r.Body, m.Snapshot.Metadata.Index)
+	n, err := h.snapshotter.SaveFromRemote(r.Body, m.Snapshot.Metadata.Index, m)
 	if err != nil {
 		msg := fmt.Sprintf("failed to save KV snapshot (%v)", err)
 		if logger != nil {

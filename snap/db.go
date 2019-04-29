@@ -24,9 +24,14 @@ import (
 	"time"
 
 	"github.com/aergoio/etcd/pkg/fileutil"
+	"github.com/aergoio/etcd/raft/raftpb"
 )
 
 var ErrNoDBSnapshot = errors.New("snap: snapshot file doesn't exist")
+
+type SnapshotSaver interface {
+	SaveFromRemote(r io.Reader, id uint64, msg raftpb.Message) (int64, error)
+}
 
 // SaveDBFrom saves snapshot of the database from the given reader. It
 // guarantees the save operation is atomic.
@@ -64,6 +69,10 @@ func (s *Snapshotter) SaveDBFrom(r io.Reader, id uint64) (int64, error) {
 
 	snapDBSaveSec.Observe(time.Since(start).Seconds())
 	return n, nil
+}
+
+func (s *Snapshotter) SaveFromRemote(r io.Reader, id uint64, msg raftpb.Message) (int64, error) {
+	return s.SaveDBFrom(r, id)
 }
 
 // DBFilePath returns the file path for the snapshot of the database with
